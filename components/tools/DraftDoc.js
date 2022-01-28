@@ -252,12 +252,6 @@ function DraftDoc() {
                     <DelawareInvestmentClubTemplate
                       name={delawareIc.name}
                       chain={delawareIc.chain}
-                      client={delawareIc.date}
-
-                      network={delawareIc.network}
-                      address={delawareIc.address}
-                      code={delawareIc.code}
-                      reference={delawareIc.reference}
                     />
                   }
                   fileName="Delaware Investment Club"

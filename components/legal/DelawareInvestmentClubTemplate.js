@@ -65,7 +65,10 @@ const styles = StyleSheet.create({
 const Br = () => "\n"
 const Tab = () => "  "
 
-const DelawareInvestmentClubTemplate = ({ name, chain }) => {
+const DelawareInvestmentClubTemplate = ({
+  name,
+  chain,
+}) => {
   return (
     <Document>
       <Page style={styles.body}>
@@ -81,8 +84,9 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Tab />
           The Org has been formed for the purposes contemplated by this
           Agreement by the filing with the Secretary of State of the State of
-          Delaware a Certificate of Formation (the “Certificate”) in
-          accordance with the Delaware Limited Liability Company Act (the “Delaware LLC Act”).
+          Delaware a Certificate of Formation (the “Certificate”) in accordance
+          with the Delaware Limited Liability Company Act (the “Delaware LLC
+          Act”).
           <Br />
           <Br />
           B.
@@ -164,13 +168,13 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Tab />
           The Org has no fixed offices or place of business. The Org’s
           activities are directed, controlled, and coordinated primarily through
-          the Designated Blockchain and other electronic communications
-          networks by Members located throughout the world. The registered
-          office and registered agent of the Org required by the Delaware LLC
-          Act to be maintained in the State of Delaware shall be the office and
-          registered agent named in the Certificate or such other office (which
-          need not be a place of business of the Org) or registered agent as may
-          be designated from time to time in accordance with this Agreement.
+          the Designated Blockchain and other electronic communications networks
+          by Members located throughout the world. The registered office and
+          registered agent of the Org required by the Delaware LLC Act to be
+          maintained in the State of Delaware shall be the office and registered
+          agent named in the Certificate or such other office (which need not be
+          a place of business of the Org) or registered agent as may be
+          designated from time to time in accordance with this Agreement.
           <Br />
           <Br />
           1.4
@@ -315,9 +319,9 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           (iii) “Consensus Attack” means an attack that: (A) is undertaken by or
           on behalf of a block producer who controls, or group of cooperating
           block producers who collectively control, a preponderance of the means
-          of block production on the Designated Blockchain; and (B) has
-          the actual or intended effect of: (1) reversing any transaction made
-          to or by any Designated Smart Contract after Confirmation of such
+          of block production on the Designated Blockchain; and (B) has the
+          actual or intended effect of: (1) reversing any transaction made to or
+          by any Designated Smart Contract after Confirmation of such
           transaction, including any “double spend” attack having or intended to
           have such effect; or (2) preventing inclusion in blocks or
           Confirmation of any transaction made to or by any Designated Smart
@@ -333,53 +337,54 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           (v) “Designated Blockchain” means at any given time, the version of
           the digital blockchain ledger that at least a majority of nodes
-          running the Designated Blockchain Client recognize 
-          as canonical as of such time in accordance with the
-          Consensus Rules. The initial Designated Blockchain shall be the
+          running the Designated Blockchain Client recognize as canonical as of
+          such time in accordance with the Consensus Rules. The initial
+          Designated Blockchain shall be the
           {chain} blockchain as recognized by the Designated Blockchain Client
           on the Designated Blockchain.
           <Br />
           <Br />
           (vi) “Designated Blockchain Client” means the blockchain software
           client designated as the “Designated Blockchain Client” by the
-          Members. The initial Designated Blockchain Client shall be
-          the Official Go Ethereum client available at "https://github.com/ethereum/go-ethereum", 
-          as it may be updated from time to time.
+          Members. The initial Designated Blockchain Client shall be the
+          Official Go Ethereum client available at
+          "https://github.com/ethereum/go-ethereum", as it may be updated from
+          time to time.
           <Br />
           <Br />
-          (vii) “Designated Blockchain Account Address” means a public
-          key address on the Designated Blockchain that is uniquely
-          associated with a single private key, and at which no smart contract
-          has been deployed.
+          (vii) “Designated Blockchain Account Address” means a public key
+          address on the Designated Blockchain that is uniquely associated with
+          a single private key, and at which no smart contract has been
+          deployed.
           <Br />
           <Br />
           (viii) “Designated Smart Contract” means a “smart contract” (as such
           term is commonly understood and used by software engineers expert in
-          developing software for use on the Designated Blockchain) that
-          is: (A) designated by the Members to serve as a ‘Designated Smart
-          Contract’ for one of more specified purposes under this Agreement, and
-          (B) deployed to a specified public key address as recognized by the
-          Designated Client on the Designated Blockchain. The initial
-          Designated Smart Contract for augmenting the governance of the Org,
-          including with respect to the admission, resignation and expulsion of
-          Members, the minting, issuance and accounting for Membership
-          Interests, the submission, voting and passage of Proposals and the
-          escrow, release allocation of Tokens owned by the Org or the Members
-          is the instance of the applicable Designated Smart Contract Source
-          Code deployed to the Designated Blockchain by the Members as recognized
-          by the Designated Client on the Designated Blockchain (the
-          “Designated Governance Smart Contract”).
+          developing software for use on the Designated Blockchain) that is: (A)
+          designated by the Members to serve as a ‘Designated Smart Contract’
+          for one of more specified purposes under this Agreement, and (B)
+          deployed to a specified public key address as recognized by the
+          Designated Client on the Designated Blockchain. The initial Designated
+          Smart Contract for augmenting the governance of the Org, including
+          with respect to the admission, resignation and expulsion of Members,
+          the minting, issuance and accounting for Membership Interests, the
+          submission, voting and passage of Proposals and the escrow, release
+          allocation of Tokens owned by the Org or the Members is the instance
+          of the applicable Designated Smart Contract Source Code deployed to
+          the Designated Blockchain by the Members as recognized by the
+          Designated Client on the Designated Blockchain (the “Designated
+          Governance Smart Contract”).
           <Br />
           <Br />
-          (ix) “Designated Smart Contract Source Code” means the source code that
-          has been designated by the Members to be deployed as a Designated
+          (ix) “Designated Smart Contract Source Code” means the source code
+          that has been designated by the Members to be deployed as a Designated
           Smart Contract. The initial Designated Smart Contract Source Code for
-          the Designated Governance Smart Contract is the code referenced
-          at "https://github.com/kalidao/kali-contracts".
+          the Designated Governance Smart Contract is the code referenced at
+          "https://github.com/kalidao/kali-contracts".
           <Br />
           <Br />
-          (x) “Distributed Org Property” means any asset, right or property
-          that was once Org Property and has been distributed or allocated to a
+          (x) “Distributed Org Property” means any asset, right or property that
+          was once Org Property and has been distributed or allocated to a
           Member or former Member.
           <Br />
           <Br />
@@ -531,9 +536,10 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           connection with any Legal Proceeding.
           <Br />
           <Br />
-          (xviii) “Org Property” means any Token or other asset, right or property
-          owned by the Org and, in the case of Tokens, shall include all Tokens
-          allocated to the account of the Designated Governance Smart Contract.
+          (xviii) “Org Property” means any Token or other asset, right or
+          property owned by the Org and, in the case of Tokens, shall include
+          all Tokens allocated to the account of the Designated Governance Smart
+          Contract.
           <Br />
           <Br />
           (xvix) “Person” means: (A) any human being/individual/natural person,
@@ -541,12 +547,12 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           legal person under applicable Legal Requirements.
           <Br />
           <Br />
-          (xx) “Token” means a digital unit that is recognized by the
-          Designated Blockchain Client on the Designated Blockchain as
-          capable of: (A) being uniquely associated with or “owned” by a
-          particular public-key address on the Designated Blockchain at
-          each particular block height; and (B) having Transfers of such digital
-          unit recorded on the Designated Blockchain.
+          (xx) “Token” means a digital unit that is recognized by the Designated
+          Blockchain Client on the Designated Blockchain as capable of: (A)
+          being uniquely associated with or “owned” by a particular public-key
+          address on the Designated Blockchain at each particular block height;
+          and (B) having Transfers of such digital unit recorded on the
+          Designated Blockchain.
           <Br />
           <Br />
           (b) Qualified Exclusivity of Designated Smart Contracts. Except as
@@ -815,12 +821,13 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           Admission of Members.
           <Br />
           <Br />
-          (a) Admission as a Member. Members may be admitted upon the approval by 
-          the Members of an Ordinary Proposal for the admission of such Person as a Member made
-          pursuant to Section 4.3(a) (a “Membership Proposal”) resulting in the
-          allocation of Shares to such Person in the Membership Mapping
-          representing such Person as recognized by the Designated Governance
-          Smart Contract, or other means otherwise approved by the Members.
+          (a) Admission as a Member. Members may be admitted upon the approval
+          by the Members of an Ordinary Proposal for the admission of such
+          Person as a Member made pursuant to Section 4.3(a) (a “Membership
+          Proposal”) resulting in the allocation of Shares to such Person in the
+          Membership Mapping representing such Person as recognized by the
+          Designated Governance Smart Contract, or other means otherwise
+          approved by the Members.
           <Br />
           <Br />
           (b) Procedure for Membership Proposals. Procedures for making
@@ -976,18 +983,19 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           similar body) or any committee of the board of directors (or other
           similar body) of the Representing Person; (ii) conflict with or
           violate any applicable Legal Requirement to which the Representing
-          Person or the Org is subject; (iii) result in any breach of or 
-          constitute a default (or an event that with notice or lapse of time 
-          or both would become a default) under, or impair the rights of the 
-          Representing Person or alter the rights or obligations of any Person under, 
-          or give to any Person any rights of termination, amendment, acceleration or cancellation of, or
-          result in the creation of a Lien on any of the properties or assets of
-          the Representing Person pursuant to, any Contract to which the
-          Representing Person is a party or by which it is bound; or (iv)
-          contravene, conflict with or result in a violation of any of the terms
-          or requirements of, or give any Governmental Body the right to revoke,
-          withdraw, suspend, cancel, terminate or modify, any Permit that is
-          held by the Representing Person.
+          Person or the Org is subject; (iii) result in any breach of or
+          constitute a default (or an event that with notice or lapse of time or
+          both would become a default) under, or impair the rights of the
+          Representing Person or alter the rights or obligations of any Person
+          under, or give to any Person any rights of termination, amendment,
+          acceleration or cancellation of, or result in the creation of a Lien
+          on any of the properties or assets of the Representing Person pursuant
+          to, any Contract to which the Representing Person is a party or by
+          which it is bound; or (iv) contravene, conflict with or result in a
+          violation of any of the terms or requirements of, or give any
+          Governmental Body the right to revoke, withdraw, suspend, cancel,
+          terminate or modify, any Permit that is held by the Representing
+          Person.
           <Br />
           <Br />
           (d) Consents. No Consent from or filing with any Governmental Body or
@@ -1294,16 +1302,16 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           (1) made available to any Member by or on behalf of, or belonging to,
-          the Org or another Member;
-          or (2) substantially related to the business or operations of the Org,
-          in each case, including any such Information provided to the Org by
-          Entities or other Persons in connection with the Org’s due diligence
-          into potential investment opportunities or received pursuant to the
-          Org’s information rights with the Entities or other Persons in which
-          the Org has invested; provided, however, that Confidential Information
-          shall not include any of the foregoing that is or becomes generally
-          available to the public other than as a result of or in connection
-          with any breach of this Section 2.8(c).
+          the Org or another Member; or (2) substantially related to the
+          business or operations of the Org, in each case, including any such
+          Information provided to the Org by Entities or other Persons in
+          connection with the Org’s due diligence into potential investment
+          opportunities or received pursuant to the Org’s information rights
+          with the Entities or other Persons in which the Org has invested;
+          provided, however, that Confidential Information shall not include any
+          of the foregoing that is or becomes generally available to the public
+          other than as a result of or in connection with any breach of this
+          Section 2.8(c).
           <Br />
           <Br />
           (ii) Except as authorized by the Org, each Member shall not disclose
@@ -1570,7 +1578,8 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           (ii) change the Designated Blockchain, the Designated Blockchain
-          Client, or any Designated Smart Contract or Designated Smart Contract Source Code;
+          Client, or any Designated Smart Contract or Designated Smart Contract
+          Source Code;
           <Br />
           <Br />
           (iii) accept any loan or other indebtedness for borrowed money, pledge
@@ -1634,11 +1643,10 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           Tokens or the number of Shares to be received by and/or paid out or
           issued by the Org if the Proposal is approved, the Designated
           Blockchain Network Account Address of the Person making the Proposal,
-          the Designated Blockchain Account Address of the Member
-          sponsoring the Proposal, the Designated Blockchain Account
-          Address of the Person, if any, who would become a Member if the
-          Proposal is approved, and flags and/or strings indicating the nature
-          of the Proposal.
+          the Designated Blockchain Account Address of the Member sponsoring the
+          Proposal, the Designated Blockchain Account Address of the Person, if
+          any, who would become a Member if the Proposal is approved, and flags
+          and/or strings indicating the nature of the Proposal.
           <Br />
           <Br />
           4.2
@@ -1738,8 +1746,8 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           (i) Except if there is a Material Adverse Exception Event affecting
           the voting mechanics of the Designated Governance Smart Contract, a
-          Member may vote the Shares held by such Member on any Proposal
-          which has been sponsored in accordance with Section 4.3 by calling the
+          Member may vote the Shares held by such Member on any Proposal which
+          has been sponsored in accordance with Section 4.3 by calling the
           vote() function on the Designated Governance Smart Contract during the
           Voting Period for such Proposal (with the Proposal and the Member’s
           desired vote upon such Proposal being supplied as the arguments of
@@ -1779,22 +1787,21 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           consensus among the Members, requested Shares will be minted or
           exited, as the case may be, and/or other governance actions permitted
           by the Designated Governance Smart Contract will be executed on the
-          Designated Blockchain.
-          4.5
+          Designated Blockchain. 4.5
           <Tab />
           Alternative Voting Mechanics in Material Adverse Exception Event.
           <Br />
           <Br />
-          If there is a Material Adverse Exception
-          Event affecting the use of the Designated Governance Smart Contract as
-          set forth in this Section 4, the Members or their designated
-          representatives shall use reasonable best efforts to create temporary
-          emergency mechanisms approximating, as nearly as reasonably
-          practicable under the circumstances, the relevant mechanisms of the
-          Designated Governance Smart Contract. Such mechanisms shall replace
-          the mechanisms of the Designated Governance Smart Contract set forth
-          in the other provisions of this Section 4 until such Material Adverse
-          Exception Event is cured.
+          If there is a Material Adverse Exception Event affecting the use of
+          the Designated Governance Smart Contract as set forth in this Section
+          4, the Members or their designated representatives shall use
+          reasonable best efforts to create temporary emergency mechanisms
+          approximating, as nearly as reasonably practicable under the
+          circumstances, the relevant mechanisms of the Designated Governance
+          Smart Contract. Such mechanisms shall replace the mechanisms of the
+          Designated Governance Smart Contract set forth in the other provisions
+          of this Section 4 until such Material Adverse Exception Event is
+          cured.
           <Br />
           <Br />
           5.
@@ -1805,28 +1812,28 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           5.1
           <Tab />
           General Prohibition Against Transfers. Except as set forth in Section
-          5.2, Section 5.4, or as otherwise authorized by the Members,
-          no Member shall directly or indirectly sell,
-          transfer, assign, pledge, mortgage, exchange, hypothecate, grant a
-          security interest in, or otherwise directly or indirectly dispose of
-          or encumber any Membership Interests or Shares or any direct or
-          indirect record or beneficial economic, voting or other interest
-          therein or right with respect thereto (including by operation of law)
-          or enter into any contract, option or other arrangement or
-          understanding providing for any of the foregoing (each transaction
-          described in this Section 5.1, a “Transfer”). Without limiting the
-          generality of the foregoing, a Member providing any other Person with,
-          or a Person otherwise obtaining, access to, a copy of or knowledge of
-          the private key controlling such Member’s member address shall be
-          automatically deemed a prohibited “Transfer” of such Member’s
-          Membership Interests and Shares, as applicable, unless the Org has
-          been furnished with a written and signed legal agreement, in form and
-          substance reasonably satisfactory to the Members, binding such other
-          Person to only use private key under the personal supervision of and
-          in accordance with specific instructions from such Member. For
-          purposes of the Uniform Commercial Code and any similar state statute,
-          Membership Interests and Shares are nonnegotiable and are not subject
-          to Article 8 of the Uniform Commercial Code.
+          5.2, Section 5.4, or as otherwise authorized by the Members, no Member
+          shall directly or indirectly sell, transfer, assign, pledge, mortgage,
+          exchange, hypothecate, grant a security interest in, or otherwise
+          directly or indirectly dispose of or encumber any Membership Interests
+          or Shares or any direct or indirect record or beneficial economic,
+          voting or other interest therein or right with respect thereto
+          (including by operation of law) or enter into any contract, option or
+          other arrangement or understanding providing for any of the foregoing
+          (each transaction described in this Section 5.1, a “Transfer”).
+          Without limiting the generality of the foregoing, a Member providing
+          any other Person with, or a Person otherwise obtaining, access to, a
+          copy of or knowledge of the private key controlling such Member’s
+          member address shall be automatically deemed a prohibited “Transfer”
+          of such Member’s Membership Interests and Shares, as applicable,
+          unless the Org has been furnished with a written and signed legal
+          agreement, in form and substance reasonably satisfactory to the
+          Members, binding such other Person to only use private key under the
+          personal supervision of and in accordance with specific instructions
+          from such Member. For purposes of the Uniform Commercial Code and any
+          similar state statute, Membership Interests and Shares are
+          nonnegotiable and are not subject to Article 8 of the Uniform
+          Commercial Code.
           <Br />
           <Br />
           5.2
@@ -1847,8 +1854,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           (c) any of the lineal descendants or antecedents, siblings, cousins,
           aunts, uncles, nieces and nephews of Member’s spouse or domestic
-          partner shall be exempt from the restriction set forth in Section
-          5.1.
+          partner shall be exempt from the restriction set forth in Section 5.1.
           <Br />
           <Br />
           For the avoidance of doubt, such Transfer shall be solely a transfer
@@ -1869,10 +1875,10 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Tab />
           Unpermitted Transfers Are Void Or Solely Of Economic Interests. Any
           Transfer or purported or attempted Transfer in violation or
-          contravention of this Section 5 shall be void ab initio and of no force
-          or effect. In the event that any restriction on Transfer set forth
-          herein is unenforceable under applicable Legal Requirement such that a
-          prohibited Transfer is nevertheless given legal effect (an
+          contravention of this Section 5 shall be void ab initio and of no
+          force or effect. In the event that any restriction on Transfer set
+          forth herein is unenforceable under applicable Legal Requirement such
+          that a prohibited Transfer is nevertheless given legal effect (an
           “Unavoidable Transfer”), then, to the maximum extent permitted by
           applicable Legal Requirement, such Transfer shall be solely a transfer
           of the economic rights with respect to the Membership Interests, and
@@ -1895,8 +1901,8 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           Governance Smart Contract, voluntarily and irrevocably cause all or a
           portion of the Member’s Membership Interests represented in the form
           of Shares and/or other interests otherwise authorized by the Members,
-          to be redeemed by the Org. A successful call in this manner
-          is referred to in this Agreement as a “RageQuit.”
+          to be redeemed by the Org. A successful call in this manner is
+          referred to in this Agreement as a “RageQuit.”
           <Br />
           <Br />
           (ii) In exchange for the redeemed Membership Interests of a
@@ -1913,12 +1919,12 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           (B) if any of the Org Property is not either a Token or legally
           represented by a Token allocated in the account of the Designated
           Governance Smart Contract, the Member’s Economic Membership Interest
-          Percentage of such other Org Property and/or other interests otherwise authorized by the Members
-          ; provided, however, that this
-          clause “(B)” shall not apply to, and no Member shall have any right or
-          entitlement to, any intellectual property, information, files,
-          servers, computer system, accounts (such as web, app, bank, brokerage
-          or other accounts), real property title or leases, insurance policies,
+          Percentage of such other Org Property and/or other interests otherwise
+          authorized by the Members ; provided, however, that this clause “(B)”
+          shall not apply to, and no Member shall have any right or entitlement
+          to, any intellectual property, information, files, servers, computer
+          system, accounts (such as web, app, bank, brokerage or other
+          accounts), real property title or leases, insurance policies,
           Contracts, Consents, permits or other non-cash and non-investment
           assets included in the Org Property or that is necessary or desirable
           for the general conduct of the Org’s business or operations (for
@@ -1937,12 +1943,13 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           (A) the Designated Governance Smart Contract shall allocate the Tokens
-          or such other authorized interests to which such Member or former Member is so entitled to such Member or
-          former Member by transferring such Tokens or other interests to the account of the
-          Member, and such allocation shall be deemed a complete and final
-          assignment and transfer of all of the Org’s right, title and ownership
-          in and to such Tokens and other interests to such Member or former Member, regardless of
-          whether or when such Member or former Member actually withdraws or
+          or such other authorized interests to which such Member or former
+          Member is so entitled to such Member or former Member by transferring
+          such Tokens or other interests to the account of the Member, and such
+          allocation shall be deemed a complete and final assignment and
+          transfer of all of the Org’s right, title and ownership in and to such
+          Tokens and other interests to such Member or former Member, regardless
+          of whether or when such Member or former Member actually withdraws or
           receives possession or control of such Tokens;
           <Br />
           <Br />
@@ -1982,33 +1989,35 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           cease to be a Member.
           <Br />
           <Br />
-          (v) The allocation of the Tokens, authorized interests and other Org Property to a
-          RageQuitting Member in accordance with this clause “(iii)” shall be
-          deemed full, final and fair payment for the Member’s Membership
-          Interests, Shares and similar authorized rights, equal to or greater than the fair market value
-          thereof, and such a redemption and fair market value shall be deemed
-          final, binding and non-appealable by the RageQuitting Member and all
-          other Members and the Org, and shall not be contested by or on behalf
-          of any of them except to the extent permitted by Section 1.10(c). THE
-          MEMBERS ACKNOWLEDGE AND AGREE THAT THE DESIGNATED GOVERNANCE SMART
-          CONTRACT AND ANY OTHER SMART CONTRACTS GOVERNING THE ALLOCATION AND
-          TRANSFER OF THE TOKENS AND OTHER INTERESTS ARE AUTONOMOUS PERSISTENT SCRIPTS RUNNING
-          PERMISSIONLESSLY AND FOR ALL PRACTICAL PURPOSES UNALTERABLY ON THE
-          DESIGNATED BLOCKCHAIN AND ARE NOT UNDER THE CONTROL OF THE
-          MEMBERS OR THE ORG. ACCORDINGLY, THE MEMBERS HEREBY ACKNOWLEDGE AND
-          AGREE THAT THE ABILITY OF A MEMBER TO RECEIVE OR WITHDRAW TOKENS OR OTHER INTERESTS
-          CANNOT BE GUARANTEED, AND ALL RISK OF NON-DELIVERY OR NON-RECEIPT OF
-          THE TOKENS TO WHICH A MEMBER IS OR MAY BECOME ENTITLED SHALL BE BORNE
-          EXCLUSIVELY BY AND IS HEREBY FULLY AND VOLUNTARILY ASSUMED BY SUCH
-          MEMBER.
+          (v) The allocation of the Tokens, authorized interests and other Org
+          Property to a RageQuitting Member in accordance with this clause
+          “(iii)” shall be deemed full, final and fair payment for the Member’s
+          Membership Interests, Shares and similar authorized rights, equal to
+          or greater than the fair market value thereof, and such a redemption
+          and fair market value shall be deemed final, binding and
+          non-appealable by the RageQuitting Member and all other Members and
+          the Org, and shall not be contested by or on behalf of any of them
+          except to the extent permitted by Section 1.10(c). THE MEMBERS
+          ACKNOWLEDGE AND AGREE THAT THE DESIGNATED GOVERNANCE SMART CONTRACT
+          AND ANY OTHER SMART CONTRACTS GOVERNING THE ALLOCATION AND TRANSFER OF
+          THE TOKENS AND OTHER INTERESTS ARE AUTONOMOUS PERSISTENT SCRIPTS
+          RUNNING PERMISSIONLESSLY AND FOR ALL PRACTICAL PURPOSES UNALTERABLY ON
+          THE DESIGNATED BLOCKCHAIN AND ARE NOT UNDER THE CONTROL OF THE MEMBERS
+          OR THE ORG. ACCORDINGLY, THE MEMBERS HEREBY ACKNOWLEDGE AND AGREE THAT
+          THE ABILITY OF A MEMBER TO RECEIVE OR WITHDRAW TOKENS OR OTHER
+          INTERESTS CANNOT BE GUARANTEED, AND ALL RISK OF NON-DELIVERY OR
+          NON-RECEIPT OF THE TOKENS TO WHICH A MEMBER IS OR MAY BECOME ENTITLED
+          SHALL BE BORNE EXCLUSIVELY BY AND IS HEREBY FULLY AND VOLUNTARILY
+          ASSUMED BY SUCH MEMBER.
           <Br />
           <Br />
           No failure or delay on the part of a Member or former Member to
           receive or withdraw from the Designated Governance Smart Contract the
-          Tokens or other interests allocated to such Member or to collect or otherwise receive
-          possession of the other Org Property allocated to such Member shall be
-          deemed to invalidate, void, reverse, delay, revoke or otherwise limit
-          the redemption of such Member’s Membership Interests, Shares and other interests.
+          Tokens or other interests allocated to such Member or to collect or
+          otherwise receive possession of the other Org Property allocated to
+          such Member shall be deemed to invalidate, void, reverse, delay,
+          revoke or otherwise limit the redemption of such Member’s Membership
+          Interests, Shares and other interests.
           <Br />
           <Br />
           (b) GuildKicks. Each Member may at any time make a Proposal to exit or
@@ -2021,8 +2030,8 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           from voting in any manner (Yes, No, or abstaining) on a GuildKick
           Proposal relating to the Member’s own expulsion. If a GuildKick
           Proposal is approved by the Members (referred to as a “GuildKick”),
-          all of the GuildKicked Member’s Shares and other authorized interests shall be redeemed by the Org,
-          mutatis mutandis.
+          all of the GuildKicked Member’s Shares and other authorized interests
+          shall be redeemed by the Org, mutatis mutandis.
           <Br />
           <Br />
           (c) Alternative Redemption Mechanics in Material Adverse Exception
@@ -2092,9 +2101,10 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           (b) As promptly as reasonably practicable after dissolution, the
           liquidators shall use reasonable best efforts to cause all Members to
-          be GuildKicked with the result that all Tokens and other authorized interests under the control of
-          the Designated Governance Smart Contract are distributed pro rata to
-          the Members in accordance with their Membership Interests.
+          be GuildKicked with the result that all Tokens and other authorized
+          interests under the control of the Designated Governance Smart
+          Contract are distributed pro rata to the Members in accordance with
+          their Membership Interests.
           <Br />
           <Br />
           (c) The distribution of cash and/or property to a Member in accordance
@@ -2401,9 +2411,10 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           WHEREAS, subject to the terms and conditions of this Joinder and the
-          Agreement, if the Membership Proposal or other authorized admission process
-          for the Candidate is approved by the Members, the Candidate will become a Member of the Org and will
-          receive Shares and/or other interests, as applicable; and
+          Agreement, if the Membership Proposal or other authorized admission
+          process for the Candidate is approved by the Members, the Candidate
+          will become a Member of the Org and will receive Shares and/or other
+          interests, as applicable; and
           <Br />
           <Br />
           WHEREAS, the Agreement requires the Candidate, as a condition
@@ -2423,14 +2434,14 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           The Candidate acknowledges that he, she or it has received and
           reviewed a complete copy of the Agreement. The Candidate agrees that
           upon execution and delivery of this Joinder and approval of the
-          Candidate’s Membership Proposal or other admission resulting in the Candidate becoming
-          entitled to receive any Shares or similar interests, the Candidate
-          shall become a party to the Agreement as a Member and shall be fully
-          bound by, and subject to, all of the covenants, terms and conditions
-          of the Agreement as though an original party thereto. The Candidate
-          shall not have any rights or obligations under the Agreement, and
-          shall not become a Member, in the event that the Candidate’s
-          Membership Proposal is not approved by the Members.
+          Candidate’s Membership Proposal or other admission resulting in the
+          Candidate becoming entitled to receive any Shares or similar
+          interests, the Candidate shall become a party to the Agreement as a
+          Member and shall be fully bound by, and subject to, all of the
+          covenants, terms and conditions of the Agreement as though an original
+          party thereto. The Candidate shall not have any rights or obligations
+          under the Agreement, and shall not become a Member, in the event that
+          the Candidate’s Membership Proposal is not approved by the Members.
           <Br />
           <Br />
           2. Miscellaneous.
@@ -2482,11 +2493,11 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           the information contained herein is complete and accurate and will
           notify the Company of any material change in any of such information
           prior to the undersigned’s investment in the Company.
+          <Br />
+          <Br />
         </Text>
-        <Br />
-        <Br />
         <Text style={styles.heading2}>FOR INDIVIDUAL INVESTORS</Text>
-        <Text style={styles.text}>Accredited Investor Certification.</Text>
+        <Text style={styles.heading3}>Accredited Investor Certification.</Text>
         <Text style={styles.text}>
           The undersigned makes one of the following representations regarding
           its income, net worth, status as a “family client” of a “family
@@ -2536,11 +2547,11 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           [__] The undersigned cannot make any of the representations set forth
           above.
+          <Br />
+          <Br />
         </Text>
-        <Br />
-        <Br />
         <Text style={styles.heading2}>FOR ENTITY INVESTORS</Text>
-        <Text style={styles.text}>Accredited Investor Certification.</Text>
+        <Text style={styles.heading3}>Accredited Investor Certification.</Text>
         <Text style={styles.text}>
           The undersigned makes one of the following representations regarding
           its net worth and certain related matters and has checked the
@@ -2653,10 +2664,10 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
         <Text style={styles.heading2}>RISK FACTORS</Text>
         <Text style={styles.numbered_list}>
           Becoming a member of {name}
-           involves a high degree of risk. You should carefully consider the
+          involves a high degree of risk. You should carefully consider the
           risks we describe below, along with all of the other information set
           forth herein and in the Operating Agreement of {name}
-           (the Agreement), before deciding to contribute capital to, acquire
+          (the Agreement), before deciding to contribute capital to, acquire
           membership interests in and participate in the governance of {name}.
           The risks and uncertainties described below are those significant risk
           factors, currently known and specific to us, which we believe are
@@ -2703,18 +2714,18 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           {name}
-           has no operating history. {name}
-           may need to raise additional capital in the future to continue
+          has no operating history. {name}
+          may need to raise additional capital in the future to continue
           operations, which may not be available on acceptable terms, or at all.
           <Br />
           <Br />
           {name}
-           is a recently formed company established under the laws of the State
+          is a recently formed company established under the laws of the State
           of Delaware with minimal activity and no historical operating results.
           There is no guarantee that {name}
-           will be able to raise any additional capital in the future or that
+          will be able to raise any additional capital in the future or that
           additional capital will be available on acceptable terms. {name}
-           generally lacks any ability to raise certain kinds of capital (e.g.,
+          generally lacks any ability to raise certain kinds of capital (e.g.,
           debt) and may not have the ability to finance capital expenditures or
           finance strategic initiatives.
           <Br />
@@ -2735,7 +2746,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           {name}
-           may be unable to recover assets for which the associated cryptographic
+          may be unable to recover assets for which the associated cryptographic
           key is lost, stolen, or destroyed. Stolen cryptographic keys may be
           used to improperly influence {name}’s activities.
           <Br />
@@ -2743,7 +2754,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           Responsibility for the safekeeping of digital assets including the
           cryptographic keys associated with blockchain-based assets rests
           solely on the individual Members. {name}
-           is generally incapable of recovering any assets associated with a lost
+          is generally incapable of recovering any assets associated with a lost
           or destroyed cryptographic key. Such loss or destruction would result
           in the total loss of any investment in {name}
           .
@@ -2754,18 +2765,18 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           or approve new proposals related to {name}
           ’s business. This may have a material adverse effect on an investment
           in
-           {name}
+          {name}
           .
           <Br />
           <Br />
           {name}
-           may suffer from misaligned incentives, adverse selection, and related
+          may suffer from misaligned incentives, adverse selection, and related
           effects through the operation of Designated Smart Contracts and
           inapplicability of fiduciary duties.
           <Br />
           <Br />
           {name}
-           is designed to coordinate its operations through its Members’
+          is designed to coordinate its operations through its Members’
           individual economic incentives. Individual Members are expected to
           source investment opportunities and conduct required due diligence.
           <Br />
@@ -2775,7 +2786,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           coordination of the Members. Members are not subject to fiduciary
           duties to one another or to {name}. As such, Members may retain
           favorable investment opportunities for themselves, or cause
-           {name}
+          {name}
           to make unfavorable investments or disbursements. Members may also
           promote investment opportunities in which they have significant,
           independent financial stakes. For example, a Member holding large
@@ -2814,7 +2825,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           investments in {name}, misappropriation of the assets of {name}, or
           other harms which may have a material adverse effect on an investment
           in
-           {name}
+          {name}
           .
           <Br />
           <Br />
@@ -2823,10 +2834,10 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           opportunities.
           <Br />
           <Br />
-          Continued Membership in  {name}
+          Continued Membership in {name}
           is conditioned on the ongoing consent of an economic majority of the
           other Members. A Member may be forcibly removed from {name}
-           through the GuildKick functionality of the Designated Smart Contracts.
+          through the GuildKick functionality of the Designated Smart Contracts.
           In this event, the ejected Member will receive a pro-rated
           distribution of {name}’s assets, but will forfeit any ability to
           influence or participate in future investment decisions of {name}.
@@ -2857,27 +2868,27 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           ’s assets.
           <Br />
           <Br />
-          It is possible to acquire Membership Interests in  {name}
+          It is possible to acquire Membership Interests in {name}
           for a range of types and amounts of other assets. Accordingly,
           acceptance of a new Member may change the overall kind and number of
           assets beneficially owned by individual Members. This may result in
-          the dilution of other Members’ investments in  {name}
+          the dilution of other Members’ investments in {name}
           or other harms which may have a material adverse effect on an
           investment in
-           {name}
+          {name}
           .
           <Br />
           <Br />
-          Entities receiving investment or funding from  {name}
+          Entities receiving investment or funding from {name}
           are not under the control of {name}. Such projects may act in a manner
-          adverse to  {name}
+          adverse to {name}
           or its Members.
           <Br />
           <Br />
           {name}
-           is unlikely to have effective control over any individuals or
+          is unlikely to have effective control over any individuals or
           entities. There is no guarantee that an entity funded by {name}
-           will act in accordance with any funding agreement. Material risks
+          will act in accordance with any funding agreement. Material risks
           include, but are not limited to, any of the following:
           <Br />
           <Br />
@@ -2928,7 +2939,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           Additionally, {name}
-           expects intense competition for limited investment opportunities.
+          expects intense competition for limited investment opportunities.
           Competitors may include investment companies and investment advisers
           including pension funds and hedge funds, technology firms, and others.
           These competitors may have fewer financial, legal, and technological
@@ -2936,29 +2947,29 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           established good will. {name}
           ’s ability to compete will depend on the capabilities and actions of
           its Members, for which {name}
-           can offer no assurances.
+          can offer no assurances.
           <Br />
           <Br />
           {name}
-           does not have D&O indemnification or other insurance, does not intend
+          does not have D&O indemnification or other insurance, does not intend
           to seek such insurance and may be unable to obtain such insurance on
           commercially reasonable terms. Consequently, {name} itself or its
           members could be exposed to losses.
           <Br />
           <Br />
           {name}
-           does not have and does not presently intend to seek insurance that
+          does not have and does not presently intend to seek insurance that
           would cover Members against claims for damages by third parties other
           Members or by {name}, or that would cover
           {name}
-           against claims for damages by Members or third parties. In the event
+          against claims for damages by Members or third parties. In the event
           that Members wished to obtain such insurance, such insurance may not
           be available on commercially reasonable terms, due to the novel
           governance features of {name}. Consequently, in the event that Members
           or {name}
-           face such litigation, insurance will not be available, and any losses
+          face such litigation, insurance will not be available, and any losses
           suffered by Members or {name}
-           will be uninsured.
+          will be uninsured.
           <Br />
           <Br />
           2. LEGAL/REGULATORY RISK
@@ -2966,14 +2977,14 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           It is intended that the Members who hold Shares be general partners in
           {name}
-           for securities law purposes, as a result of which
-           {name}
-           Members will not have the protections of the securities laws in
+          for securities law purposes, as a result of which
+          {name}
+          Members will not have the protections of the securities laws in
           purchasing or divesting themselves of their Shares.
           <Br />
           <Br />
           Although {name}
-           is a company and thus not a “general partnership” under U.S. state
+          is a company and thus not a “general partnership” under U.S. state
           laws regarding unincorporated associations, Members who hold Shares
           have the rights, powers and responsibilities of general managers of{" "}
           {name}, have the right to vote on all decisions of {name}, and may
@@ -2987,38 +2998,38 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           protections of the U.S. federal securities laws in their investment
           decision to acquire or divest themselves of Shares. As a result,{" "}
           {name}
-           Members will not have the remedies against {name}
-           that would be available if Shares were securities—such as a right of
+          Members will not have the remedies against {name}
+          that would be available if Shares were securities—such as a right of
           rescission for failure to register the offering of Shares.
           <Br />
           <Br />
           It is possible that Members may, individually or collectively, cause
-           {name}
-           to require registration under the Investment Company Act of 1940, with
+          {name}
+          to require registration under the Investment Company Act of 1940, with
           which {name}
-           would be unable to comply.
+          would be unable to comply.
           <Br />
           <Br />
           The Investment Company Act of 1940 exempts from registration entities
           with fewer than 100 beneficial owners of securities held by the
           entity. Although {name}
-           is designed not to be or become an entity required to register as an
+          is designed not to be or become an entity required to register as an
           “investment company”, it is possible that Members may act outside the
           limitations established by the Agreement and Designated Smart
           Contracts. A Member may, for example, transfer control of a Designated
           Blockchain Network Account Address to another natural person or group
-          of natural persons, in violation of the Agreement’s prohibition on such
-          actions, thereby triggering registration requirements under the
+          of natural persons, in violation of the Agreement’s prohibition on
+          such actions, thereby triggering registration requirements under the
           Investment Company Act.
           <Br />
           <Br />
           In the event registration is required, it may be impossible or
           infeasible for {name}
-           to comply with relevant laws and regulations pertaining to the
+          to comply with relevant laws and regulations pertaining to the
           registration, recordkeeping, and oversight of {name}. In addition, it
           may not be possible for
-           {name}
-           to become aware of such an event, so that Members may not be able to
+          {name}
+          to become aware of such an event, so that Members may not be able to
           RageQuit in order to avoid liability for violations of the Investment
           Company Act. This could have a material adverse effect on an
           investment in {name}
@@ -3026,7 +3037,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           {name}
-           may inadvertently issue non-voting shares triggering regulatory
+          may inadvertently issue non-voting shares triggering regulatory
           requirements under the Investment Advisers Act that {name} may be
           unable to comply with.
           <Br />
@@ -3035,7 +3046,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           exemption from registration, any entity that engages in the business
           of advising others as to the value or advisability of investing in,
           purchasing, or selling securities. Members of {name}
-           may cause the issuance of non-voting shares which may cause {name} to
+          may cause the issuance of non-voting shares which may cause {name} to
           be subject to the Investment Advisers Act. The Investment Advisers Act
           may impose restrictions on the activities of {name}, including
           substantive prohibitions, contractual requirements, recordkeeping
@@ -3046,7 +3057,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           ’s compliance with the Investment Advisers Act may be impossible or
           infeasible, and may require extraordinary response up to and including
           liquidation of {name}. It may be impossible for {name}
-           to produce a faithful disclosure of material facts or conflicts of
+          to produce a faithful disclosure of material facts or conflicts of
           interest. It may be impossible to prevent principal transactions.
           <Br />
           <Br />
@@ -3056,7 +3067,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           The Securities Act of 1933 requires that securities transactions be
           registered with the Securities and Exchange Commission. The sale of
           Shares or other assets of {name}
-           may be deemed securities transactions requiring registration unless
+          may be deemed securities transactions requiring registration unless
           subject to an exemption from registration.
           <Br />
           <Br />
@@ -3072,7 +3083,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           In order to preserve exemptions from registration under the Securities
           Act and Investment Company Act, Shares of {name}
-           may generally not be traded. The ability of Members to dispose of the
+          may generally not be traded. The ability of Members to dispose of the
           Shares may be limited to redemption of Shares through the RageQuit
           function of the Designated Smart Contracts. Any such liquidation would
           distribute Org assets to the exiting Member in kind. Both Shares and
@@ -3087,18 +3098,18 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           or one of its Members may become subject to a legal order or other
           requirement that permanently or temporarily prohibits or restrains{" "}
           {name}
-           from executing a function it would otherwise reasonably be expected to
+          from executing a function it would otherwise reasonably be expected to
           execute, or that mandates or directs {name}
-           to take an action it would otherwise not reasonably be expected to
+          to take an action it would otherwise not reasonably be expected to
           perform, which {name}
-           or such Member may be incapable of complying with.
+          or such Member may be incapable of complying with.
           <Br />
           <Br />
           As a result of its reliance on the Designated Smart Contracts, which
           cannot be modified after they are deployed, {name}
-           or one of its Members may become subject to a legal order or other
+          or one of its Members may become subject to a legal order or other
           requirement for which compliance is impossible or infeasible. {name}
-           may not have Member or agent capable of executing a legal order or
+          may not have Member or agent capable of executing a legal order or
           requirement. Noncompliance could result in legal liability that would
           have a material adverse effect on an investment in {name}
           .
@@ -3115,7 +3126,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           of {name}
           ’s Designated Smart Contracts in conjunction with the actions of{" "}
           {name}
-           or its individual Members, may constitute money transmission subject
+          or its individual Members, may constitute money transmission subject
           to licensure and supervision. In particular, the Trade functionality
           of the Designated Smart Contracts may be deemed exchange or
           transmission of money subject to State and Federal regulation.
@@ -3123,7 +3134,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           Compliance with such licensure and supervision requirements would
           likely be impossible or infeasible, subjecting {name}
-           to legal liability. In particular, it may be impossible to maintain
+          to legal liability. In particular, it may be impossible to maintain
           and implement required compliance programs including
           anti-money-laundering (AML) policies or participation in regulatory
           examinations. Noncompliance could result in legal liability that would
@@ -3133,18 +3144,18 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           It may be impossible or infeasible to enforce legal agreements,
           remedies, or orders against {name}
-           or its Members due to the nature of blockchain technology.
+          or its Members due to the nature of blockchain technology.
           <Br />
           <Br />
           Nearly all actions and decisions of {name}
-           are mediated by blockchain technology. Generally, blockchain
+          are mediated by blockchain technology. Generally, blockchain
           technology does not permit any action not within a specific set of
           parameters granted by the possession of a cryptographic key. Although{" "}
           {name}
-           is a legal entity subject to the laws and courts of applicable
+          is a legal entity subject to the laws and courts of applicable
           jurisdictions, it may be impossible to enforce some legal agreements,
           remedies, or other orders against {name}
-           or individual Members due to the inherent limitations of blockchain
+          or individual Members due to the inherent limitations of blockchain
           technology. This may have a material adverse effect on the legal
           rights of a Member or third party, or on an investment in {name}
           .
@@ -3162,7 +3173,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           official organization or authority. Because of the nature of
           open-source software projects, it may be easier for third parties not
           affiliated with {name}
-           to introduce software vulnerabilities or bugs into the core
+          to introduce software vulnerabilities or bugs into the core
           infrastructure elements of the blockchain network. This could result
           in the corruption or exploitation of the open-source code including
           but not limited to Consensus Attacks, changes to Consensus Rules, or
@@ -3186,7 +3197,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           result in a loss of trust in the security and operation of blockchain
           networks and a decline in user activity which could have a negative
           impact on {name}
-           and its investments.
+          and its investments.
           <Br />
           <Br />
           Investments may be rendered valueless due to the open-source nature of
@@ -3196,7 +3207,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           The majority of software operating on blockchain networks is open
           source, which generally allows third parties to produce modified
           duplicates of the software. To the extent {name}
-           funds the development of such software, it is possible that a third
+          funds the development of such software, it is possible that a third
           party may release competing software or modify the software to remove
           profit-generating mechanisms built into the original software. This
           may have a material adverse effect on an investment in {name}.
@@ -3273,7 +3284,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           If {name}
-           discovers errors or unexpected functionalities in a Designated Smart
+          discovers errors or unexpected functionalities in a Designated Smart
           Contract after it has been deployed, {name} may make a determination
           that the Designated Smart Contract is defective and that its use
           should be discontinued. Members may be unable to rely on {name}
@@ -3295,7 +3306,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           Risks associated with the distributed ledger technology could affect
-           {name}
+          {name}
           ’s business directly or the market for blockchain assets generally. In
           either case, the occurrence of these events could have a material
           adverse effect on an investment in {name}.
@@ -3336,7 +3347,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           of transactions could result in a loss of confidence in the blockchain
           network and its assets. This could have a material adverse effect on
           an investment in {name}, or on {name}
-           itself.
+          itself.
           <Br />
           <Br />
           The prices of blockchain-based assets are extremely volatile.
@@ -3397,9 +3408,8 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           Changes in the rights, obligations, incentives, or rewards for the
           various participants in blockchain networks;
           <Br />
-          •<Tab /> The cost of trading and
-          transacting in blockchain assets, and whether such costs may become
-          fixed or standardized;
+          •<Tab /> The cost of trading and transacting in blockchain assets, and
+          whether such costs may become fixed or standardized;
           <Br />
           •<Tab />
           Investors’ expectations with respect to the rate of inflation;
@@ -3436,8 +3446,8 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           in blockchain networks; • Global or regional political, economic or
           financial events and situations; or
           <Br />
-          •<Tab /> Global or regional political, economic or
-          financial events and situations; or
+          •<Tab /> Global or regional political, economic or financial events
+          and situations; or
           <Br />
           •<Tab />
           Expectations among blockchain network participants that the value of
@@ -3471,8 +3481,8 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           countries have shown that they intend to adopt legislation to regulate
           the sale and use of blockchain assets. Such legislation may vary
           significantly among jurisdictions, which may subject participants in
-           {name}
-           and the greater blockchain marketplace to different and perhaps
+          {name}
+          and the greater blockchain marketplace to different and perhaps
           contradictory requirements.
           <Br />
           <Br />
@@ -3490,7 +3500,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           {name}
-           may be prevented from entering, or may be required to cease operations
+          may be prevented from entering, or may be required to cease operations
           in, a jurisdiction that makes it illegal or commercially unviable or
           undesirable to operate in such jurisdiction. Enforcement, or the
           threat of enforcement, may also drive a critical mass of participants
@@ -3499,7 +3509,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           governments, any regulatory changes affecting blockchain assets could
           be substantial and materially adverse to the development and growth of{" "}
           {name}
-           and its business.
+          and its business.
           <Br />
           <Br />
           The extent to which blockchain assets are used or perceived to fund
@@ -3528,16 +3538,16 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           <Br />
           <Br />
           {name}
-           may not be able to prevent illegal activity from occurring using the
+          may not be able to prevent illegal activity from occurring using the
           Designated Smart Contracts. {name}
-           may be unable to detect the unauthorized use of a KYC/AML whitelisted
+          may be unable to detect the unauthorized use of a KYC/AML whitelisted
           Member address. Further, {name}
-           may be unable to verify whether cryptographic keys for wallets
+          may be unable to verify whether cryptographic keys for wallets
           containing Shares have been transferred to third parties who have not
           completed the required KYC/AML process. Although {name}
-           plans to implement compliance procedures for KYC/AML obligations,
+          plans to implement compliance procedures for KYC/AML obligations,
           {name}
-           may not be successful in deterring or identifying illegal activity.
+          may not be successful in deterring or identifying illegal activity.
           <Br />
           <Br />
           The use of blockchain assets for illegal purposes, or the perception
@@ -3545,7 +3555,7 @@ const DelawareInvestmentClubTemplate = ({ name, chain }) => {
           damage to {name}
           ’s reputation, damage to the reputation of blockchain assets
           generally, and a loss of confidence in the services provided by {name}
-           and the blockchain industry and community as a whole.
+          and the blockchain industry and community as a whole.
           <Br />
           <Br />
         </Text>
